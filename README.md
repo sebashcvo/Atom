@@ -6,5 +6,5 @@ Rocha: Estudiar Ultrasonicos, Servos, Control Xbox
 
 Ivan: Estudiar Ultrasonicos, Servos, Control Xbox
 
-Sebastian: Terminar Conectividad Bluetooth, Implementar MPU a la comuinicacion Serial.
+Sebastian: Terminar Conectividad Bluetooth, Implementar MPU a la comuinicacion Serial. (Completado)
 
