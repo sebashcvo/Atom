@@ -1,5 +1,10 @@
-# atom
+# atom (Arm That Omens Movement): An IRIS Group project.
 
-Porfavor suban sus archivos a la carpeta de "Desgin Files". Para subir sus archivos ponganlos dentro de una carpte con el nombre: "Design_tunombre" y suban la carpeta entera.
+Ismael: Diseño de Caja, Estudiar Codigo
 
-(Si seleccionan los archivos solamente va a quedar bien feo, no olviden subir la carpeta solamente)
+Rocha: Estudiar Ultrasonicos, Servos, Control Xbox
+
+Ivan: Estudiar Ultrasonicos, Servos, Control Xbox
+
+Sebastian: Terminar Conectividad Bluetooth, Implementar MPU a la comuinicacion Serial.
+
