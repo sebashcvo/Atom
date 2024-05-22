@@ -1,10 +1,10 @@
 # atom (Arm That Omens Movement): An IRIS Group project.
 
-Ismael: Diseño de Caja, Estudiar Codigo
+Ismael: Diseño de Caja Y, Anillos, Implementacion Galga, Galga
 
-Rocha: Estudiar Ultrasonicos, Servos, Control Xbox
+Rocha: Ultrasonicos, Servos, Control Xbox (Opcional), Implementacion Galga, Galga
 
-Ivan: Estudiar Ultrasonicos, Servos, Control Xbox
+Ivan: Ultrasonicos, Servos, Control Xbox (Opcional), Implementacion Galga, Galga
 
-Sebastian: Terminar Conectividad Bluetooth, Implementar MPU a la comuinicacion Serial. (Completado)
+Sebastian: Debug Codigo, Reporte
 
