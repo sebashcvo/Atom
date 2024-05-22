@@ -74,6 +74,13 @@ while(slave.available()>0){   //Condicion en donde solo se accede a Serial cuand
     Serial.println(msgy);
    
   }
+  else if(eslabon==5){  //Si el String es X, se guarda una variable para guardar angulo en X y se imprime en el Serial
+    int valf=angulo;
+    String letterf="Garra f: ";
+    String msgf=letterf+valf;
+    Serial.println(msgf);
+   
+  }
   delay(10);
   }
 }

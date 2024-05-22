@@ -29,27 +29,30 @@ byte status = mpu.begin();
 
 
 void loop() {
+  //Datos provenientes del Arduino Arm (Eslabon 1)
   while(hand.available()>0){   //Condicion en donde solo se accede a Serial cuando hay dato disponible
   String msg = hand.readStringUntil('\n');   //El string dentro del Serial solo se lee hasta tener salto de linea
   Serial.println(msg);
   }
+
+  //Angulo X Eslabon 2
   mpu.update();
   int valx2= mpu.getAngleX();
   String letterx2="X2\n"; //String con funcion de Label
   String msgx2=valx2+letterx2; //Valor Input con el label 
-
   Serial.print(msgx2);
-  
+
+  //Abgulo Y Garra
   int valy= mpu.getAngleY();
   String lettery="Y4\n"; //String con funcion de Label
   String msgy=valx2+letterx2; //Valor Input con el label 
-  
   Serial.print(msgy);
-
-  int val=analogRead(A0);
- Serial.println(val);
  
- //Valor Flexomtetro 
+  //Valor Flexomtetro 
+  int val=analogRead(A0);
+  Serial.println(val);
+ 
+
   int flex=analogRead(A0);
   String letterf="F5\n"; //String con funcion de Label
   String msgf=flex+letterf; //Valor Input con el label 
