@@ -29,14 +29,15 @@ byte status = mpu.begin();
 void loop() {
   mpu.update();
   int valx1= mpu.getAngleX();
-  String letterx="X1\n"; //String con funcion de Label
-  String msgx=valx1+letterx; //Valor Input con el label 
-  
-   int valz= mpu.getAngleZ();
-   String letterz="Z3\n"; //String con funcion de Label
-  String msgz=valz+letterz; //Valor Input con el label 
-  Serial.print(msgx);
-  Serial.print(msgz);
+  String letterx="1"; //String con funcion de Label
+   String space="\n";
+  String msgx=letterx+valx1+space; //Valor Input con el label 
+   Serial.print(msgx);
 
+  
+  int valz3= mpu.getAngleZ();
+  String letterz3="3"; //String con funcion de Label
+  String msgz3=letterz3+valz3+space; //Valor Input con el label 
+  Serial.print(msgz3);
   delay(100);
 }

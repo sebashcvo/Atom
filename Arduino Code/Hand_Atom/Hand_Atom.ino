@@ -1,4 +1,4 @@
-#include <SoftwareSerial.h>
+ #include <SoftwareSerial.h>
 #include "Wire.h"
 #include <MPU6050_light.h>
 
@@ -14,6 +14,7 @@ void setup() {
 Serial.begin(38400);
 hand.begin(38400);
 Wire.begin();
+pinMode(9,INPUT);
 
 byte status = mpu.begin();
   Serial.print(F("MPU6050 status: "));
@@ -38,24 +39,20 @@ void loop() {
   //Angulo X Eslabon 2
   mpu.update();
   int valx2= mpu.getAngleX();
-  String letterx2="X2\n"; //String con funcion de Label
-  String msgx2=valx2+letterx2; //Valor Input con el label 
+  String letterx2="2"; //String con funcion de Label
+  String space="\n";
+  String msgx2=letterx2+valx2+space; //Valor Input con el label 
   Serial.print(msgx2);
 
-  //Abgulo Y Garra
-  int valy= mpu.getAngleY();
-  String lettery="Y4\n"; //String con funcion de Label
-  String msgy=valx2+letterx2; //Valor Input con el label 
-  Serial.print(msgy);
- 
-  //Valor Flexomtetro 
-  int val=analogRead(A0);
-  Serial.println(val);
- 
+  int valy4= mpu.getAngleY();
+  String lettery4="4"; //String con funcion de Label
+  String msgy4=lettery4+valy4+space; //Valor Input con el label 
+  Serial.print(msgy4);
 
-  int flex=analogRead(A0);
-  String letterf="F5\n"; //String con funcion de Label
-  String msgf=flex+letterf; //Valor Input con el label 
-  Serial.print(msgf);
+  int flex= analogRead(9);
+  String letterf="5";
+  String msgf=letterf+flex+space; //Valor Input con el label 
+  
   delay(100);
 }
+  
