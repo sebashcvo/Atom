@@ -10,10 +10,10 @@ Materials:
 -IMU MPU3050
 -Protoboard
 -Sensor De Flexión Ada 1070
--Pack De 6 Baterias De 4.8v
--Sensor Ultrasonico Hc-Sr04
--Modulo Bluetooth Hc-05
--Material De Impresión Pla
+- 6 battery pack 4.8v
+-Ultrasonico Sensor HC-Sr04
+-Bluetooth Module HC-05
+-PLA Filament
 -Driver Para Servos PCA9685
 -Fuente 12V 5A
 -Stepper Nema 17
